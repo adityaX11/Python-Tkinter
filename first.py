@@ -63,5 +63,29 @@ lab.place(x=30,y=25, height=100,width=350)
 lab1=tk.Label(root,text="Happy Day",font=("Arial",25,"italic"),bg="Gold")
 lab1.place(x=245,y=250)  #relx -> relative x and rely-> relative y..'''
 
+# variables in tkinter
+"""
+Tkinter Variable	Python Equivalent	Used For
+StringVar()	        str	Text values (e.g. Entry, Label)
+IntVar()	        int	Whole numbers (e.g. Radiobuttons)
+DoubleVar()	        float	Decimal numbers
+BooleanVar()	    bool	True / False values (Checkboxes)
+
+for access of this variable we have to use 
+get(),getvar() method | set(), setvar() method
+
+"""
+'''
+var1=tk.StringVar(root,value="Aditya Kumar")
+var2=tk.IntVar(root,value=12344)
+var3=tk.DoubleVar(root,value=243.23)
+var4=tk.BooleanVar(root,value=True)
+var5=tk.StringVar(root,name="2")
+var5.set("Good Morning")
+print(var5.get())
+print(var1.get())
+print(var2.get())
+print(var3.get())
+print(var4.get())'''
 
 root.mainloop() ## by the help of this command you run the tkinter page
