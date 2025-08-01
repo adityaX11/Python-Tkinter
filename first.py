@@ -49,6 +49,13 @@ lab1.pack(side="left",padx=10)
 '''
 # now we use gride..
 
+lab=tk.Label(root,text="Hello world",font=("Times New Roman",40,"bold"),bg="red")
+lab.grid(row=0,column=0,padx=50,pady=80)
+
+lab1=tk.Label(root,text="Nice to meet you",font=("Times New Roman",40,"bold"),bg="Yellow")
+lab1.grid(row=0,column=2,columnspan=3) # columnspan means increase the size of Area of column..
+
+
 
 
 root.mainloop() ## by the help of this command you run the tkinter page
