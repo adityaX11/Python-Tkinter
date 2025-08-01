@@ -49,13 +49,19 @@ lab1.pack(side="left",padx=10)
 '''
 # now we use gride..
 
-lab=tk.Label(root,text="Hello world",font=("Times New Roman",40,"bold"),bg="red")
+'''lab=tk.Label(root,text="Hello world",font=("Times New Roman",40,"bold"),bg="red")
 lab.grid(row=0,column=0,padx=50,pady=80)
 
 lab1=tk.Label(root,text="Nice to meet you",font=("Times New Roman",40,"bold"),bg="Yellow")
-lab1.grid(row=0,column=2,columnspan=3) # columnspan means increase the size of Area of column..
+lab1.grid(row=0,column=2,columnspan=3) # columnspan means increase the size of Area of column..'''
 
+# now we use place()..
 
+'''lab=tk.Label(root,text="Good Morning",font=("Times New Roman",30,"bold"),bg="White")
+lab.place(x=30,y=25, height=100,width=350)
+
+lab1=tk.Label(root,text="Happy Day",font=("Arial",25,"italic"),bg="Gold")
+lab1.place(x=245,y=250)  #relx -> relative x and rely-> relative y..'''
 
 
 root.mainloop() ## by the help of this command you run the tkinter page
