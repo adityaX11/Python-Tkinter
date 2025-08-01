@@ -38,6 +38,8 @@ root.maxsize(700,700)'''
 '''root.geometry("600x500")
 root.resizable(False,False)''' # by this you can't resize the gui interface.
 
+
+#LAYOUT MANAGEMENT.....
 # start with label and their position with pack()..
 
 '''lab = tk.Label(root,text="BANK",font=("Times New Roman",50,"bold"),bg="#ADD8E6")
