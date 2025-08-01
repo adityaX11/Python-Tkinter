@@ -12,7 +12,8 @@ root.iconbitmap(r"C:\Users\Aditya Kumar\Downloads\icon.ico")
 
 ## change the background colour
 # root.config(bg="red")
-root['bg'] = "#3b253b"
+# root['bg'] = "#3b253b"
+root.config(bg="red")
 
 # root.geometry("500x400-150-150") # by this you can resize the gui interface and set point where you want to view the Interface
 
@@ -39,7 +40,7 @@ root.maxsize(700,700)'''
 root.resizable(False,False)''' # by this you can't resize the gui interface.
 
 
-#LAYOUT MANAGEMENT.....
+# LAYOUT MANAGEMENT.....
 # start with label and their position with pack()..
 
 '''lab = tk.Label(root,text="BANK",font=("Times New Roman",50,"bold"),bg="#ADD8E6")
@@ -77,6 +78,7 @@ for access of this variable we have to use
 get(),getvar() method | set(), setvar() method
 
 """
+
 '''
 var1=tk.StringVar(root,value="Aditya Kumar")
 var2=tk.IntVar(root,value=12344)
@@ -89,5 +91,25 @@ print(var1.get())
 print(var2.get())
 print(var3.get())
 print(var4.get())'''
+
+
+# learn more of label..
+# entry=input("Enter the Something : ")
+# var=tk.StringVar()
+lab=tk.Label(
+    root,
+    text="Python \nDeveloper", # this is static text
+    # textvariable=var, # this is dynamic text you can change the at run time.
+
+    font=("Arial",40,"bold"),bg="white",fg="black",
+    cursor="hand2",
+    relief="ridge", # you can use "flat","raised","sunken","groove","solid".
+    justify="center",  # it means hows your text alingment.
+    width=10,
+    height=4,
+    # underline=3,
+)
+lab.place(x=500,y=10)
+# var.set(entry)
 
 root.mainloop() ## by the help of this command you run the tkinter page
