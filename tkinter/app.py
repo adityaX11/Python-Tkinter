@@ -13,7 +13,7 @@ root.iconbitmap(r"C:\Users\Aditya Kumar\Downloads\icon.ico")
 ## change the background colour
 # root.config(bg="red")
 # root['bg'] = "#3b253b"
-root.config(bg="red")
+root.config(bg="light blue")
 
 # root.geometry("500x400-150-150") # by this you can resize the gui interface and set point where you want to view the Interface
 
@@ -96,7 +96,7 @@ print(var4.get())'''
 # learn more of label..
 # entry=input("Enter the Something : ")
 # var=tk.StringVar()
-lab=tk.Label(
+'''lab=tk.Label(
     root,
     text="Python \nDeveloper", # this is static text
     # textvariable=var, # this is dynamic text you can change the at run time.
@@ -110,6 +110,24 @@ lab=tk.Label(
     # underline=3,
 )
 lab.place(x=500,y=10)
-# var.set(entry)
+# var.set(entry)'''
+
+# image setup...
+
+from PIL import Image,ImageTk  ## this pillow library for display the jpg images because tkinter support only png ,ioc images. 
+image=Image.open(r"C:\Users\Aditya Kumar\Desktop\my file\Python-Tkinter\tkinter\cafepic.JPG")
+photo = ImageTk.PhotoImage(image)
+
+lab=tk.Label(
+    root,
+    image=photo,
+    bg="light blue",
+    text="Profile",
+    font=("Arial",20,"bold"),
+    fg="black",
+    compound="top"
+)
+
+lab.place(x=100,y=100)
 
 root.mainloop() ## by the help of this command you run the tkinter page
