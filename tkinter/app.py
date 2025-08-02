@@ -112,5 +112,4 @@ lab=tk.Label(
 lab.place(x=500,y=10)
 # var.set(entry)
 
-
 root.mainloop() ## by the help of this command you run the tkinter page
