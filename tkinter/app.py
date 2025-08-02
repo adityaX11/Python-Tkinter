@@ -114,11 +114,11 @@ lab.place(x=500,y=10)
 
 # image setup...
 
-from PIL import Image,ImageTk  ## this pillow library for display the jpg images because tkinter support only png ,ioc images. 
-image=Image.open(r"C:\Users\Aditya Kumar\Desktop\my file\Python-Tkinter\tkinter\cafepic.JPG")
-photo = ImageTk.PhotoImage(image)
+# from PIL import Image,ImageTk  ## this pillow library for display the jpg images because tkinter support only png ,ioc images. 
+# image=Image.open(r"C:\Users\Aditya Kumar\Desktop\my file\Python-Tkinter\tkinter\cafepic.JPG")
+# photo = ImageTk.PhotoImage(image)
 
-lab=tk.Label(
+'''lab=tk.Label( 
     root,
     image=photo,
     bg="light blue",
@@ -128,6 +128,29 @@ lab=tk.Label(
     compound="top"
 )
 
-lab.place(x=100,y=100)
+lab.place(x=100,y=100)'''
+
+
+# label with frame..
+
+'''label_frame=tk.LabelFrame(
+    root,
+    text="Aditya",
+    font=("Arial",30),
+    # labelanchor="n",
+    bg="light blue"
+
+)
+label_frame.place(x=150,y=150, height=100,width=400)
+
+lab1=tk.Label(
+    root,
+    text="I am Python developer",
+    font=("Times Now Roman",20,"italic"),
+    bg="light blue",
+    fg="brown"
+)
+lab1.place(x=200,y=200)'''
+
 
 root.mainloop() ## by the help of this command you run the tkinter page
