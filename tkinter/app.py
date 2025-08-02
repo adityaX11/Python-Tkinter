@@ -153,4 +153,29 @@ lab1=tk.Label(
 lab1.place(x=200,y=200)'''
 
 
+# button setup........
+
+def python():
+    lb1.config(text="Aditya Kumar")
+
+bt=tk.Button(
+    root,
+    text="ON",
+    font=(10),
+    bg="green",
+    cursor="hand2",
+    command=python
+)
+bt.place(x=200,y=200)
+
+lb1=tk.Label(
+    root,
+    text="Hello",
+    font=("Arial",20,"italic"),
+    bg="light green",
+    relief="sunken"
+)
+lb1.place(x=300,y=200)
+
+
 root.mainloop() ## by the help of this command you run the tkinter page
