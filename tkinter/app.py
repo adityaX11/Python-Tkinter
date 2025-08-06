@@ -155,27 +155,51 @@ lab1.place(x=200,y=200)'''
 
 # button setup........
 
-def python():
-    lb1.config(text="Aditya Kumar")
+'''def python(): # always define above on the all concept.
+    lb1.config(text="Aditya Kumar is python developer.")
 
 bt=tk.Button(
     root,
-    text="ON",
+    text="Click!",
     font=(10),
     bg="green",
     cursor="hand2",
-    command=python
+    command=python  # always call function name only not the like python()..
 )
 bt.place(x=200,y=200)
 
 lb1=tk.Label(
     root,
-    text="Hello",
+    text="Welcome",
     font=("Arial",20,"italic"),
     bg="light green",
     relief="sunken"
 )
-lb1.place(x=300,y=200)
+lb1.place(x=300,y=200)'''
+
+#  SOME BUTTON SET LIKE CHECK-BOX, RADIO BUTTON, ETC....
+
+# check-box..
+def test():
+    print(var.get())
+
+var=tk.BooleanVar()
+cb=tk.Checkbutton(
+    root,
+    text="I agree.",
+    font=(20),
+    variable=var  # by here var get the value from check button and show the o/p by command of button assign.
+)
+cb.pack(padx=50,pady=50)
+
+bt=tk.Button(
+    root,
+    text="Submit",
+    font=(30),
+    command=test
+)
+bt.pack(padx=100,pady=100)
+print(var.get())
 
 
 root.mainloop() ## by the help of this command you run the tkinter page
